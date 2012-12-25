@@ -10,7 +10,7 @@ end
 
 Then /^I take screenshots$/ do
 
-  screenshot_path = "screens/#{Time.now.strftime('%Y-%m-%d-%H-%M-%S')}.png"
+  screenshot_path = "C:/screens/#{Time.now.strftime('%Y-%m-%d-%H-%M-%S')}.png"
 
   page.driver.browser.manage.window.maximize
   page.driver.browser.save_screenshot(screenshot_path)

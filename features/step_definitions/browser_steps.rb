@@ -19,6 +19,7 @@ end
 
 When /^I close left frame$/ do
   find(:css, 'div.b-page__switcher_type_left').click
+  find(:css, 'ymaps.ymaps-b-select__panel-switcher-i').click
 end
 
 

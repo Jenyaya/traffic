@@ -3,7 +3,7 @@ Given /^opened "(.*?)" page$/ do |page|
     when 'Yandex Maps' then
       page = 'http://maps.yandex.ua/?ll=30.570627%2C50.457148&spn=0.988770%2C0.309476&z=11&l=map%2Ctrf%2Ccmr%2Cmap&trfm=cur'
 
-  when 'KBP' then page = 'http://kbp.aero'
+  when 'KBP' then page = 'http://kbp.aero/en'
   end
   visit page
 

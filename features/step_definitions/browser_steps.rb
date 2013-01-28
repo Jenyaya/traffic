@@ -2,6 +2,8 @@ Given /^opened "(.*?)" page$/ do |page|
   case page
     when 'Yandex Maps' then
       page = 'http://maps.yandex.ua/?ll=30.570627%2C50.457148&spn=0.988770%2C0.309476&z=11&l=map%2Ctrf%2Ccmr%2Cmap&trfm=cur'
+
+  when 'KBP' then page = 'http://kbp.aero'
   end
   visit page
 
@@ -20,6 +22,7 @@ end
 When /^I close left frame$/ do
   find(:css, 'div.b-page__switcher_type_left').click
   find(:css, 'ymaps.ymaps-b-select__panel-switcher-i').click
+  find(:css, 'ymaps.ymaps-b-zoom__sprite').click
 end
 
 
@@ -37,3 +40,6 @@ When /I run script "(.*?)" times/ do |time|
   }
 
 end
+
+
+

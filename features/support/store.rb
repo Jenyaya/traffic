@@ -6,4 +6,8 @@ def save_flight_details(flight_info)
     csv << flight_info
   end
 
+ CSV.open("depart.csv", "a") do |csv|
+    csv << flight_info
+  end
+
 end
